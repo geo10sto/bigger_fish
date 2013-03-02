@@ -13,23 +13,46 @@
     	body {
         padding-top: 0px;
         padding-bottom: 60px;
+        margin:0;
+        background:url('images/header_bg.jpg') repeat-x;
+        background-color:#062d3a;
       	}
+        #overlay {
+          background:url('images/infinite_bg.jpg') repeat-x;
+          position:absolute;
+          z-index:-1;
+          height:100%;
+          width:100%;
+        }
       /* Custom container */
       .container {
         margin: 0 auto;
         max-width: 1000px;
-        background:url('images/header_bg.jpg') repeat-x;
-        background-color:#062d3a;
+        text-align:center;
       }
       .container > hr {
         margin: 60px 0;
+      }
+      #enter-button {
+        position:relative;
+        bottom:15px;
+        display:inline-block;
+        background:url('images/enter-button.jpg');
+        width:205px;
+        height: 76px;
+        text-align: center;
+      }
+      #enter-button:hover {
+        background:url('images/facebook-hover.jpg');
       }
     </style>
 </head>
 
 <body>
+  <div id="overlay"></div>
 	<div class="container">
-		<img src="images/header.jpg" alt="">
+		<img src="images/header_img.jpg" alt="">
+    <a href="#" id="enter-button"></a>
 	</div>
 
 	<script src="js/bootstrap.js"></script>
