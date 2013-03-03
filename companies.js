@@ -23,7 +23,7 @@ var servicesProvided = {
             type:"Electronics",
             service:"Electronic equipment sales"
         }
-        ],
+        ]
     },
     {
         type:"State Companies", 
@@ -44,6 +44,6 @@ var servicesProvided = {
             type:"National Airways",
             service:"National airway transportation"
         }
-        ],
+        ]
     }
 }
