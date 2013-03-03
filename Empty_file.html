@@ -12,8 +12,18 @@
     <style type="text/css">
     	body {
         margin: 0;
+        padding-top: 0px;
         padding-bottom: 60px;
+        background:url('images/header_infinite.jpg') repeat-x;
+        background-color:#021319;
+        font-family: "Trebuchet MS";
       	}
+        #overlay {
+          background:url('images/header-inf_FINAL.jpg') repeat-x;
+          z-index: -1;
+          height: 100%;
+          width: 100%;
+        }
       /* Custom container */
       .container {
         margin: 0 auto;
@@ -25,10 +35,11 @@
 </head>
 
 <body>
+  <div id="overlay"/>
 	<div class="container">
-		<img src="images/header2.jpg" alt="">
+		<img src="images/header.jpg" alt="">
 	</div>
-
+  
 	<script src="js/bootstrap.js"></script>
 </body>
 </html>
