@@ -9,57 +9,7 @@
   <!-- Bootstrap -->
   <link href="static/css/bootstrap.css" rel="stylesheet" media="screen">
     <link href="static/css/bootstrap-responsive.css" rel="stylesheet">
-    <style type="text/css">
-      body {
-        padding-top: 0px;
-        padding-bottom: 60px;
-        margin:0;
-        background:url('static/images/header_bg.jpg') repeat-x;
-        background-color:#062d3a;
-        font-family: "Trebuchet MS";
-        }
-        #overlay {
-          background:url('static/images/infinite_bg.jpg') repeat-x;
-          position:absolute;
-          z-index:-1;
-          height:100%;
-          width:100%;
-        }
-      /* Custom container */
-      .container {
-        margin: 0 auto;
-        max-width: 1000px;
-        text-align:center;
-        position: relative;
-      }
-      .container > hr {
-        margin: 60px 0;
-      }
-      #enter-button {
-        position:relative;
-        bottom:15px;
-        display:inline-block;
-        background:url('static/images/enter-button.jpg');
-        width:205px;
-        height: 76px;
-        text-align: center;
-      }
-      #enter-button:hover {
-        background:url('static/images/facebook-hover.jpg');
-      }
-      #desc {
-        opacity: 0.9;
-        background: #062d3a;
-        color:#FFF;
-        position: absolute;
-        top:400px;
-        left:700px;
-        width:300px;
-        font-size: 16px;
-        padding:10px;
-        border-radius:10px;
-      }
-    </style>
+    <link href="static/css/styles.css" rel="stylesheet">
 </head>
 
 <body>
@@ -69,10 +19,23 @@
       Create your own business and start partnering with your friends into Bigger Fish's online Universe.
     </div>
     <img src="static/images/header_img.jpg" alt="">
-    <a href="#" id="enter-button"></a>
+    <a id="enter-button"></a>
   </div>
 
   <script src="static/js/jquery.min.js"></script>
   <script src="static/js/bootstrap.js"></script>
+  <script type="text/javascript">
+    $("#enter-button").click(function() {
+      $.ajax({
+        url: '/login',
+        method: 'POST',
+        success: function(data) {
+          if (data.status && data.status == "OK" && data.message && data.message == "loggedIn") {
+            window.location = '/wizard';
+          }
+        }
+      })
+    });
+  </script>
 </body>
 </html>

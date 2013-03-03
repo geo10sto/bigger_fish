@@ -1,6 +1,6 @@
-from flask import Flask, redirect, url_for, session, request, render_template
+from flask import Flask, jsonify, redirect, url_for, session, request, render_template
 from flask_oauth import OAuth
-
+import json
 
 SECRET_KEY = 'development key'
 DEBUG = True
@@ -29,12 +29,20 @@ def index():
     return render_template('index.html')
     #return redirect(url_for('login'))
 
-
-@app.route('/login')
+@app.route('/login', methods=['POST'])
 def login():
-    return facebook.authorize(callback=url_for('facebook_authorized',
-        next=request.args.get('next') or request.referrer or None,
-        _external=True))
+    if request.method == 'POST':
+        return jsonify({"status": "OK", "message": "loggedIn"})
+
+@app.route('/wizard')
+def wizard():
+    return render_template('wizard.html')
+
+# @app.route('/login')
+# def login():
+#     return facebook.authorize(callback=url_for('facebook_authorized',
+#         next=request.args.get('next') or request.referrer or None,
+#         _external=True))
 
 
 @app.route('/login/authorized')
