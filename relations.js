@@ -12,7 +12,7 @@ var serviceRelations = {
         {
             metric:"Profitability",
             raise:10,
-        }]
+        }],
         affectUser:
         {
             metric:"Reputation",
@@ -31,7 +31,7 @@ var serviceRelations = {
         {
             metric:"Profitability",
             raise:10,
-        }]
+        }],
         affectUser:
         {
             metric:"Reputation",
@@ -50,7 +50,7 @@ var serviceRelations = {
         {
             metric:"Profitability",
             raise:10,
-        }]
+        }],
         affectUser:
         {
             metric:"Reputation",
@@ -69,7 +69,7 @@ var serviceRelations = {
         {
             metric:"Profitability",
             raise:10,
-        }]
+        }],
         affectUser:
         {
             metric:"Reputation",
@@ -88,7 +88,7 @@ var serviceRelations = {
         {
             metric:"Profitability",
             raise:10,
-        }]
+        }],
         affectUser:
         {
             metric:"Reputation",
@@ -107,7 +107,7 @@ var serviceRelations = {
         {
             metric:"Profitability",
             raise:10,
-        }]
+        }],
         affectUser:
         {
             metric:"Reputation",
@@ -126,7 +126,7 @@ var serviceRelations = {
         {
             metric:"Profitability",
             raise:10,
-        }]
+        }],
         affectUser:
         {
             metric:"Reputation",
@@ -145,7 +145,7 @@ var serviceRelations = {
         {
             metric:"Profitability",
             raise:10,
-        }]
+        }],
         affectUser:
         {
             metric:"Reputation",
@@ -153,3 +153,4 @@ var serviceRelations = {
         }
     }
     ]
+};

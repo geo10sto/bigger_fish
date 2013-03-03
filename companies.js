@@ -1,7 +1,8 @@
-var servicesProvided = {
-    [{
+var companies={
+    availableTypes:[
+    {
         type:"Services", 
-        subtypes = [
+        subtypes:[
         {
             type:"Internet Service Provider", 
             service: "Internet connection services",
@@ -14,7 +15,7 @@ var servicesProvided = {
     },
     {
         type:"Retail", 
-        subtypes = [
+        subtypes:[
         {
             type:"Automotive and parts",
             service:"Cars and car parts sales"
@@ -27,7 +28,7 @@ var servicesProvided = {
     },
     {
         type:"State Companies", 
-        subtypes = [
+        subtypes:[
         {
             type:"Electricity Company",
             service: "Electricity"
@@ -46,4 +47,5 @@ var servicesProvided = {
         }
         ]
     }
-}
+    ]
+};

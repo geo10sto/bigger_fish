@@ -31,7 +31,7 @@ var userMetrics = {
         proc:2
     }
     ]
-}
+};
 
 var companyMetrics = {
     metrics:[
@@ -60,4 +60,4 @@ var companyMetrics = {
         proc:2
     }
     ]
-}
+};
