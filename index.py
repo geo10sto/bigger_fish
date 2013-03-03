@@ -36,6 +36,10 @@ def company():
 def business():
     return render_template('business.html', **{'picture': session['picture'], 'first_name': session['first_name']})
 
+@app.route('/modify')
+def modify():
+    return render_template('modify.html', **{'picture': session['picture'], 'first_name': session['first_name']})
+
 @app.route('/dashboard')
 def dashboard():
     return render_template('dashboard.html', **{'picture': session['picture'], 'first_name': session['first_name']})
