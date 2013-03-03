@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>The Bigger Fish</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+    <meta name="author" content="">
+  <!-- Bootstrap -->
+  <link href="css/bootstrap.css" rel="stylesheet" media="screen">
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <style type="text/css">
+      body {
+        margin: 0;
+        padding-top: 0px;
+        padding-bottom: 60px;
+        background:url('images/header_infinite.jpg') repeat-x;
+        background-color:#021319;
+        font-family: "Trebuchet MS";
+
+        }
+        #overlay {
+          background:url('images/header-inf_FINAL.jpg') repeat-x;
+          z-index: -1;
+          height: 100%;
+          width: 100%;
+        }
+      /* Custom container */
+      .container {
+        margin: 0 auto;
+        max-width: 1000px;
+        text-align: center;
+      }
+      .form-container {
+        background: #FFF;
+        color:#FFF;
+        font-size: 20px;
+        border-radius: 15px;
+        width: 400px;
+        margin-left: 300px;
+        margin-top: 30px;
+        min-height: 300px;
+
+      }
+      #signup {
+
+      }
+      .form-title {
+        margin-top: 10px;
+        font-size: 26px;
+        color:#FFF;
+        font-weight: bold;
+      }
+      #fbpic {
+        width:150px;
+        border-radius:10px;
+        border:1px solid #222;
+        float:left;
+      }
+      #form {
+        float:left;
+        margin-left:40px;
+        text-align: left;
+      }
+      #form > label {
+        display: block;
+      }
+    </style>
+</head>
+
+<body>
+  <div id="overlay"/>
+  <div class="container">
+    <img src="images/header.png" alt="">
+
+    <div class="form-title">Who Are You?</div>
+  <div class="form-container">
+
+  <form id="signup" onsubmit="return false;">
+  <img src="http://graph.facebook.com/ra.du.79/picture?type=large" id="fbpic" />
+  <div id="form">
+    <label>I am</label>
+    <input type="text" id="nickname" value="Ra Du"/><br>
+    <input type="submit" value="Okay, Go On">
+  </div>
+  </form>
+  </div>
+  </div>
+
+  <script src="js/bootstrap.js"></script>
+</body>
+</html>

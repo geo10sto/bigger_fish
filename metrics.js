@@ -42,7 +42,7 @@ var companyMetrics = {
         max:100,
     },
     {
-        name:"Net Income",
+        name:"Turnover",
         init:0,
         unit:100,
         proc:2
