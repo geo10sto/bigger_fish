@@ -32,9 +32,13 @@ def index():
 def company():
     return render_template('company.html')
 
+@app.route('/business')
+def business():
+    return render_template('business.html', **{'picture': session['picture'], 'first_name': session['first_name']})
+
 @app.route('/dashboard')
 def dashboard():
-    return render_template('dashboard.html')
+    return render_template('dashboard.html', **{'picture': session['picture'], 'first_name': session['first_name']})
 
 # @app.route('/login', methods=['POST'])
 # def login():
@@ -63,6 +67,10 @@ def wizard(resp):
 
     request.data = {'picture': 'http://graph.facebook.com/%s/picture?type=large' % me.data['username'],
         'first_name': me.data['first_name'], 'last_name': me.data['last_name']}
+
+    session['picture'] = 'http://graph.facebook.com/%s/picture?type=large' % me.data['username']
+    session['first_name'] = me.data['first_name']
+    session['last_name'] = me.data['last_name']
 
     return render_template('wizard.html', **request.data)
 

@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>The Bigger Fish</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+    <meta name="author" content="">
+  <!-- Bootstrap -->
+  <link href="css/bootstrap.css" rel="stylesheet" media="screen">
+    <link href="static/css/bootstrap.css" rel="stylesheet">
+
+    <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+<script src="bootstrap/js/bootstrap.js" ></script>
+    <link href="metric.css" rel="stylesheet">
+    <style type="text/css">
+      body {
+        margin: 0;
+        padding-top: 0px;
+        padding-bottom: 60px;
+        background:url('static/images/header_infinite.jpg') repeat-x;
+        background-color:#021319;
+        font-family: "Segoe UI";
+
+        }
+        #overlay {
+          background:url('static/images/header-inf_FINAL.jpg') repeat-x;
+          z-index: -1;
+          height: 100%;
+          width: 100%;
+        }
+      /* Custom container */
+      .container {
+        margin: 0 auto;
+        max-width: 1000px;
+        text-align: center;
+        position: relative;
+      }
+      .form-container {
+        background: #FFF;
+        color:#036;
+        font-size: 20px;
+        border-radius: 15px;
+        width: 400px;
+        margin-left: 300px;
+        margin-top: 30px;
+        min-height: 300px;
+        padding:10px;
+      }
+      #signup {
+
+      }
+      .form-title {
+        margin-top: 10px;
+        font-size: 26px;
+        color:#FFF;
+        font-weight: bold;
+      }
+      #fbpic {
+        width:150px;
+        border-radius:10px;
+        border:1px solid #222;
+        float:left;
+        margin-top:50px;
+        margin-left:15px;
+      }
+      #form {
+        float:left;
+        margin-left:40px;
+        text-align: left;
+        padding:10px;
+      }
+      #form > label {
+        display: block;
+      }
+      .inner {
+        background:#FFF;
+        border-radius:10px;
+        position: relative;
+      }
+      .header {
+        height:120px;
+        background:url('static/images/header.png') no-repeat;
+      }
+      .name {
+        height:53px;
+        background:#000;
+        opacity: 0.6;
+        color:#FFF;
+        overflow: visible;
+        float:right;
+        padding:20px 20px 0 20px;
+        font-weight: bold;
+      }
+      .name:hover {
+        color:#CCF;
+      }
+      .user-image {
+        height:73px;
+        float:right;
+      }
+      .dollars {
+        font-size:20px;
+        color: #FFF;
+        float:right;
+      }
+      .breadcrumbs {
+        position: absolute;
+        top:85px;
+        left:-220px;
+        width:1150px;
+        color:#FFF;
+      }
+      #company {
+        position: absolute;
+        top:10px;
+        left:10px;
+        width:200px;
+        height:250px;
+      }
+      #popoverData {
+        text-decoration: none;
+      }
+
+
+    </style>
+</head>
+
+<body>
+  <div id="overlay"/>
+  <div class="container">
+    <div class="header">
+
+         <a id="popoverData" class ="name" href="#"
+    data-content='
+    <div style="color: #3E5696; white-space:nowrap; min-width:200px; font-weight:bold"><div class="tag inline-block">
+            Worth: </div>
+            <div class=" inline-block">
+          $6,000
+         </div>
+         <br/>
+         <div class="tag inline-block">
+            Stock: </div>
+            <div class=" inline-block" >
+              $1,000
+         </div>
+
+         <br/>
+         <div class="tag inline-block">
+            Reputation: </div>
+            <div class="meter inline-block" style="width: 50%; background-color:#800335">
+         </div>
+
+         <br/>
+         <div class="tag inline-block">
+            Influence: </div>
+            <div class="meter inline-block" style="width: 30%; ">
+         </div>
+
+         <br/>
+         <div class="tag inline-block">
+            Notoriety: </div>
+            <div class="meter inline-block" style="width: 20%; background-color:green;">
+         </div><br>
+          <div class="tag inline-block">
+            Level: </div>
+            <div class=" inline-block" >
+              <img src="static/images/perch.png" style="height:20px"/> Perch
+         </div>
+         </div>'
+          rel="popover"
+     data-placement="bottom" data-original-title="Your Standings" data-trigger="hover">{{first_name}} &nbsp; &#9661;</a>
+
+
+      <script>
+$('#popoverData').popover({html: true});
+$('#popoverOption').popover({ trigger: "hover" });
+</script>
+
+    <img src="{{picture}}" class="user-image"/>
+    </div>
+    <div class="breadcrumbs">
+      Dashboard
+      <div class="dollars"><b>$1,000</b> in stock</div>
+    </div>
+    <div class="inner">
+      <a href="/business" id="company"></a>
+      <img src="static/images/interfata 1.png"/>
+    </div>
+  </div>
+
+  <script src="js/bootstrap.js"></script>
+</body>
+</html>
