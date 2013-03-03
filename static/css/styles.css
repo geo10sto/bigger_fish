@@ -23,6 +23,7 @@
   width:205px;
   height: 76px;
   text-align: center;
+  cursor: pointer;
 }
 #enter-button:hover {
   background:url('/static/images/facebook-hover.jpg');
@@ -44,9 +45,9 @@ body {
   margin: 0;
   padding-top: 0px;
   padding-bottom: 60px;
-  background:url('/static/images/header_infinite.jpg') repeat-x;
+  background:url('/static/images/infinite_bg.jpg') repeat-x;
   background-color:#021319;
-  font-family: "Trebuchet MS";
+  font-family: "Segoe UI";
 
   }
   #overlay {
@@ -62,14 +63,13 @@ body {
   text-align: center;
 }
 .form-container {
-  background: #FFF;
   color:#FFF;
   font-size: 20px;
   border-radius: 15px;
   width: 400px;
   margin-left: 300px;
-  margin-top: 30px;
-  min-height: 300px;
+  margin-top: 0px;
+  min-height: 200px;
 
 }
 #signup {

@@ -18,12 +18,12 @@
     <div class="form-title">Who Are You?</div>
   <div class="form-container">
 
-  <form id="signup" .form-inline  onsubmit="return false;">
-    <img src="http://graph.facebook.com/ra.du.79/picture?type=large" id="fbpic" />
+  <form id="signup" action="/company"  style="margin-top: 30px">
+    <img src="{{picture}}" id="fbpic" />
     <div id="form">
-      <label style="color:#000" for="nickname">Name: </label>
-      <input type="text" id="nickname" class="input-medium" value="" placeholder="Enter your game name ..."/><br>
-      <input type="submit" class="btn" value="Okay, Go On">
+      <label style="color:#fff; font-size: 20px" for="nickname">Name: </label>
+      <input type="text" id="nickname" class="input-medium" value="{{first_name}} {{last_name}}" placeholder="Enter your game name ..."/><br>
+      <input type="submit" class="btn-large" value="Okay, Go On" style="margin-top:30px">
     </div>
   </form>
   </div>

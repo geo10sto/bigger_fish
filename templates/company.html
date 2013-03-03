@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>The Bigger Fish</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+    <meta name="author" content="">
+  <!-- Bootstrap -->
+  <link href="static/css/bootstrap.css" rel="stylesheet" media="screen">
+  <link href="static/css/bootstrap.css" rel="stylesheet" />
+  <link href="static/css/styles.css" rel="stylesheet" />
+<body>
+  <div id="overlay"/>
+  <div class="container">
+    <img src="static/images/header.png" alt="">
+
+    <div class="form-title">What about your company?</div>
+  <div class="form-container">
+
+  <form id="signup"  onsubmit="/dashboard" style="margin-top: 30px">
+    <div id="form">
+      <label style="color:#fff; font-size: 18px" for="nickname">Name: </label>
+      <input type="text" id="nickname" class="input-large" placeholder="Select your company profile"/><br>
+
+      <label for="company_profile" style="font-size:18px">Select your company profile:</label>
+      <select id="company_profile">
+      </select>
+      <br/>
+      <input type="submit" class="btn-large" value="Start the Game!" style="margin-top:30px; margin-left:25px">
+    </div>
+  </form>
+  </div>
+  </div>
+
+  <script src="static/js/companies.js"></script>
+  <script src="static/js/jquery.min.js"></script>
+  <script src="static/js/bootstrap.js"></script>
+  <script>
+    (function() {
+      selectGroup = [];
+      companies.availableTypes.forEach(function(companyType) {
+        selectGroup += '<optgroup label="'+companyType.type+'">';
+          companyType.subtypes.forEach(function(subtype) {
+            selectGroup += '<option value="'+subtype.type+'">'+subtype.type+'</option>';
+          });
+        selectGroup += '</optgroup>';
+      });
+      $("#company_profile").html(selectGroup);
+
+    }).call(this);
+  </script>
+</body>
+</html>

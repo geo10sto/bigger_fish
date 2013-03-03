@@ -13,29 +13,15 @@
 </head>
 
 <body>
-  <div id="overlay"></div>
   <div class="container">
     <div id="desc">
       Create your own business and start partnering with your friends into Bigger Fish's online Universe.
     </div>
-    <img src="static/images/header_img.jpg" alt="">
-    <a id="enter-button"></a>
+    <img src="static/images/first-page-header.png" alt="">
+    <a href="/login" id="enter-button"></a>
   </div>
 
   <script src="static/js/jquery.min.js"></script>
   <script src="static/js/bootstrap.js"></script>
-  <script type="text/javascript">
-    $("#enter-button").click(function() {
-      $.ajax({
-        url: '/login',
-        method: 'POST',
-        success: function(data) {
-          if (data.status && data.status == "OK" && data.message && data.message == "loggedIn") {
-            window.location = '/wizard';
-          }
-        }
-      })
-    });
-  </script>
 </body>
 </html>
