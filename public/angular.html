@@ -1,0 +1,16 @@
+<div class="container-fluid" ng-controller="index">
+	<div class="row-fluid">
+		<div class="span12">
+			<h1>Bigger fish demo</h1>
+
+			<p>This application needs most basic Facebook permissions. It only needs your name and picture. It won't publish anything on your wall.</p>
+			<p>You can easily remove it from your Facebook applications right after trying the demo.</p>
+
+			{{loginButtons}}
+		</div>
+	</div>
+
+	<div class="row-fluid">
+		<span ng-repeat="user in users"> {{user}}  </span>
+	</div>
+</div>
