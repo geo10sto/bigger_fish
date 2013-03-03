@@ -5421,6 +5421,7 @@ input[type="submit"].btn.btn-mini {
   font-weight: normal;
   line-height: 18px;
   background-color: #f7f7f7;
+  color:#000;
   border-bottom: 1px solid #ebebeb;
   -webkit-border-radius: 5px 5px 0 0;
      -moz-border-radius: 5px 5px 0 0;
