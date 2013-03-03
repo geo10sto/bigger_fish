@@ -12,9 +12,11 @@
     <style type="text/css">
       body {
         margin: 0;
+        padding-top: 0px;
         padding-bottom: 60px;
+        background:url('images/header_infinite.jpg') repeat-x;
         background-color:#021319;
-        font-family: "Segoe UI";
+        font-family: "Trebuchet MS";
 
         }
         #overlay {
@@ -27,11 +29,10 @@
       .container {
         margin: 0 auto;
         max-width: 1000px;
-        background-color:#021319;
         text-align: center;
       }
       .form-container {
-        background: #EEF;
+        background: #FFF;
         color:#FFF;
         font-size: 20px;
         border-radius: 15px;
@@ -45,7 +46,7 @@
 
       }
       .form-title {
-        margin-top: 30px;
+        margin-top: 10px;
         font-size: 26px;
         color:#FFF;
         font-weight: bold;
@@ -68,9 +69,9 @@
 </head>
 
 <body>
-  <div id="overlay"></div>
+  <div id="overlay"/>
   <div class="container">
-    <img src="images/header.jpg" alt="">
+    <img src="images/header.png" alt="">
 
     <div class="form-title">Who Are You?</div>
   <div class="form-container">
@@ -79,7 +80,8 @@
   <img src="http://graph.facebook.com/ra.du.79/picture?type=large" id="fbpic" />
   <div id="form">
     <label>I am</label>
-    <input type="text" id="nickname" value="Ra Du"/>
+    <input type="text" id="nickname" value="Ra Du"/><br>
+    <input type="submit" value="Okay, Go On">
   </div>
   </form>
   </div>
